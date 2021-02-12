@@ -16,7 +16,7 @@ Material  = CreateMaterial("material type", red, green, blue, transparency, meta
 `material (material)` - The material created.
 
 ```lua
-metal = CreateMaterial("rock",0.5,0.5,0.5,1,1,0.1)
+metal = CreateMaterial("metal",0.5,0.5,0.5,1,1,0.1)
 ```
 
 ## **CreateBrush**
