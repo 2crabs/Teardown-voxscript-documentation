@@ -12,7 +12,7 @@ Material  = CreateMaterial("material type", red, green, blue, transparency, meta
 `metallic (float)` - How metallic the material is. On a range of 0 to 1.  
 `roughness (float)` - roughness of material. On a range of 0 to 1.
 
-Return value  
+### Return value  
 `material (material)` - The material created.
 
 ```lua
@@ -25,7 +25,7 @@ brush  = CreateBrush("filepath")
 ### arguments
 `filepath (string)` Path to .vox file used.
 
-Return value  
+### Return value  
 `brush (brush)` - The brush created.
 
 ```lua
@@ -40,7 +40,7 @@ FlipBrush(brush, "axis")
 `brush (brush)` Which brush to flip.  
 `axis (string)` axis to flip brush over.
 
-Return value  
+### Return value  
 `none`
 
 ```lua
@@ -69,7 +69,7 @@ sizex, sizey, sizez = GetBrushSize(brush)
 ### arguments
 `brush (brush)` Which brush to get size of.
 
-Return value  
+### Return value  
 `sizex (int)` - The size of the brush in the x direction.  
 `sizey (int)` - The size of the brush in the y direction.  
 `sizez (int)` - The size of the brush in the z direction.
@@ -84,7 +84,7 @@ Material(brush/material)
 ### arguments
 `brush/material (brush/material)` Which brush to set to be currently used.
 
-Return value  
+### Return value  
 `none`
 
 ```lua
@@ -122,7 +122,7 @@ Sphere(middleX, middleY, middleZ, radius)
 `middleZ (int)` - The middle position in the z direction.  
 `radius (int)` - The radius in voxels.
 
-Return value  
+### Return value  
 `none`
 
 ```lua
@@ -152,7 +152,7 @@ sizeX, sizeY = GetImageSize(image)
 ### arguments
 `image (image)` - The image to get the size of.
 
-Return value  
+### Return value  
 `sizeX (int)` - The size of the image in pixels in the x direction.  
 `sizeY (int)` - The size of the image in pixels in the y direction.
 
@@ -166,7 +166,7 @@ red, green, blue = GetImagePixel(image)
 ### arguments
 `image (image)` - The image to use.
 
-Return value  
+### Return value  
 `red (float)` - The red value of the pixel in a range of 0 to 1.  
 `green (float)` - The green value of the pixel in a range of 0 to 1.  
 `blue (float)` - The blue value of the pixel in a range of 0 to 1.
@@ -186,7 +186,7 @@ Heightmap(startX, startY, endX, endY, scale,hollow)
 `scale (float)` - How much to multiply the height.  
 `hollow (bool)` - ?
 
-Return value  
+### Return value  
 `none`
 
 ```lua
@@ -204,7 +204,7 @@ Vox(x, y, z, rotX, rotY, rotZ)
 `rotY` - How much to rotate the vox around the y axis in degrees.  
 `rotZ` - How much to rotate the vox around the z axis in degrees.
 
-Return value  
+### Return value  
 `none`  
 Will create a compund out of all of the objects created below it until another Vox() is called.
 
