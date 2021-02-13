@@ -1,5 +1,7 @@
 # Voxscript functions
 
+[Sphere](documentation.md#sphere)
+
 ## **CreateMaterial**
 Material  = CreateMaterial("material type", red, green, blue, transparency, metallic, roughness )
 
