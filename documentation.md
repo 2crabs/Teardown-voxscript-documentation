@@ -1,6 +1,19 @@
 # Voxscript functions
 
-[Sphere](documentation.md#sphere)
+[CreateBrush](documentation.md#CreateBrush)  
+[FlipBrush](documentation.md#FlipBrush)  
+[TranslateBrush](documentation.md#TranslateBrush)  
+[GetBrushSize](documentation.md#GetBrushSize)  
+[Material](documentation.md#Material)  
+[Pos](documentation.md#Pos)  
+[Box](documentation.md#Box)  
+[Sphere](documentation.md#Sphere)  
+[Expand](documentation.md#Expand)  
+[LoadImage](documentation.md#LoadImage)  
+[GetImageSize](documentation.md#GetImageSize)  
+[GetImagePixel](documentation.md#GetImagePixel)  
+[Heightmap](documentation.md#Heightmap)  
+[Vox](documentation.md#Vox)
 
 ## **CreateMaterial**
 Material  = CreateMaterial("material type", red, green, blue, transparency, metallic, roughness )
