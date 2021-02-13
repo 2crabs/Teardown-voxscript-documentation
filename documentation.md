@@ -82,13 +82,14 @@ local x, y, z = GetBrushSize(barrel)
 Material(brush/material)
 
 ### arguments
-`brush/material (brush/material)` Which brush to set to be currently used.
+`brush/material (brush/material)` Which brush/material to set to be currently used.
 
 ### Return value  
-`none`
+`none`  
+Sets which material or brush to be used for the next object placed.
 
 ```lua
-local x, y, z = GetBrushSize(barrel)
+Material(wood)
 ```
 
 ## **Pos**
