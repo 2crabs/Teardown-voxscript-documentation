@@ -197,8 +197,8 @@ Heightmap(startX, startY, endX, endY, scale,hollow)
 ### arguments
 `startX (int)` - The pixel in the image to start from in the x direction.  
 `startY (int)` - The pixel in the image to start from in the y direction.  
-`startX (int)` - The pixel in the image to end in the x direction.  
-`startY (int)` - The pixel in the image to end in the y direction.  
+`endX (int)` - The pixel in the image to end in the x direction.  
+`endY (int)` - The pixel in the image to end in the y direction.  
 `scale (float)` - How much to multiply the height.  
 `hollow (bool)` - ?
 
