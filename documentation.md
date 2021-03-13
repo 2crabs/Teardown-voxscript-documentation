@@ -177,7 +177,7 @@ local x, y = GetImageSize(FenceImage)
 ```
 
 ## **GetImagePixel**
-red, green, blue = GetImagePixel(image)
+red, green, blue, alpha = GetImagePixel(image)
 
 ### arguments
 `image (image)` - The image to use.
@@ -185,10 +185,11 @@ red, green, blue = GetImagePixel(image)
 ### Return value  
 `red (float)` - The red value of the pixel in a range of 0 to 1.  
 `green (float)` - The green value of the pixel in a range of 0 to 1.  
-`blue (float)` - The blue value of the pixel in a range of 0 to 1.
+`blue (float)` - The blue value of the pixel in a range of 0 to 1.  
+`alpha (float)` - The alpha of the pixel in a range of 0 to 1.
 
 ```lua
-local r, g, b = GetImagePixel(FenceImage)
+local r, g, b, a = GetImagePixel(FenceImage)
 ```
 
 ## **Heightmap**
