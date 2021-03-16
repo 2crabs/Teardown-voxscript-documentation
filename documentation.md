@@ -1,5 +1,5 @@
 # Voxscript functions
-
+[CreateMaterial](documentation.md#CreateMaterial)  
 [CreateBrush](documentation.md#CreateBrush)  
 [FlipBrush](documentation.md#FlipBrush)  
 [TranslateBrush](documentation.md#TranslateBrush)  
@@ -16,22 +16,24 @@
 [Vox](documentation.md#Vox)
 
 ## **CreateMaterial**
-Material  = CreateMaterial("material type", red, green, blue, transparency, metallic, roughness )
+Material  = CreateMaterial("material type", red, green, blue, alpha, reflective, shiny, metallic, emission)
 
 ### arguments
 `Material (string)` - Type of material. Can be glass, wood, masonry, plaster, metal, heavymetal, rock, dirt, foliage, or unphysical.  
-`red (float)` - Red value of material. On a range of 0 to 1.  
-`green (float)` - Green value of material. On a range of 0 to 1.  
-`blue (float)` - Blue value of material. On a range of 0 to 1.  
-`transparency (float)` - Transparency of material. On a range of 0 to 1.  
-`metallic (float)` - How metallic the material is. On a range of 0 to 1.  
-`roughness (float)` - roughness of material. On a range of 0 to 1.
+`red (float)` - Red value of material on a range of 0 to 1.  
+`green (float)` - Green value of material on a range of 0 to 1.  
+`blue (float)` - Blue value of material on a range of 0 to 1.  
+`alpha (float)` - Alpha value of material on a range of 0 to 1.  
+`reflective (float)` - How reflective the material is on a range of 0 to 1.  
+`shiny (float)` - How shiny the material is on a range of 0 to 1.  
+`metallic(float)` - How metallic the material is on a range of 0 to 1.   
+`emission(float)` - The emission of the material on a range of 0 to 32.
 
 ### Return value  
 `material (material)` - The material created.
 
 ```lua
-metal = CreateMaterial("metal",0.5,0.5,0.5,1,1,0.1)
+metal = CreateMaterial("metal",0.5,0.5,0.5,1,0.2,0.8,0)
 ```
 
 ## **CreateBrush**
