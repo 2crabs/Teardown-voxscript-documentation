@@ -99,14 +99,19 @@ local x, y, z = GetBrushSize(barrel)
 Material(brush/material)
 
 ### arguments
-`brush/material (brush/material)` Which brush/material to set to be currently used.
+`brush/material (brush/material(palette index))` Which brush/material to set to be currently used.
 
 ### Return value  
 `none`  
-Sets which material or brush to be used for the next object placed.
+Sets which material or brush to be used for the next objects placed.
 
 ```lua
-Material(wood)
+--Creates dirt material and sets that as the current material
+dirt = CreateMaterial("dirt", 0.26, 0.23, 0.20, 1, 0, 0.1)
+Material(dirt)
+
+--Sets material to be index 255 on the palette
+Material(255)
 ```
 
 ## **Pos**
